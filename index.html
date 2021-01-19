@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TD | Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio_style.css">
+    </head>
+
+    <body class="background">
+
+        <!-- NAV BAR -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
+        </div>
+        <!-- END NAV BAR -->
+
+        <!-- BREAKS INSERTED TO ADD SPACE BETWEEN NAV BAR AND THE FIRST HEADING -->
+        <br>
+        <br>
+
+        <!-- BACKGROUND VIDEO -->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./images/./videos/typing_video.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- VIDEO TEXT -->
+        <div class="Video_Text">
+            <h1 style="color:white;">Tim DiMasi's Portfolio</h1>
+            <p>
+                <strong>
+                    <center>
+                        <q>The computer programmer is a creator of universes for which he alone is the lawgiver. 
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                        </q>
+                        <br> - Joseph Weizenbaum
+                        <br>
+                        <br> My name is Tim DiMasi and welcome to my portfolio website. On it, I will tell you about my background and experience.
+                        <br>
+                        <br> Thank you for stopping by and enjoy!
+                    </center>
+                </strong>
+            </p>    
+        </div>
+
+        <!-- SLIDESHOW SECTION -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">1 / 6</div>
+                        <img class="Slide_Show_Images" src="images/me.png" style="width:100%">
+                        <div class="text">I'm available to assist you on your project!</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">2 / 6</div>
+                        <img class="Slide_Show_Images" src="images/html_css_js.png" style="width:100%">
+                        <div class="text">I am a full-stack software developer <br> trained in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">3 / 6</div>
+                        <img class="Slide_Show_Images" src="images/python.jpg" style="width:100%">
+                        <div class="text">the programming language Python,</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">4 / 6</div>
+                        <img class="Slide_Show_Images" src="images/react.png" style="width:100%">
+                        <div class="text">popular libraries & frameworks like React and Bootstrap,</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">5 / 6</div>
+                        <img class="Slide_Show_Images" src="images/sql.jpg" style="width:100%">
+                        <div class="text">back end development, databases and SQL.</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="Slide_Number">6 / 6</div>
+                        <img class="Slide_Show_Images" src="images/mail.png" style="width:100%">
+                        <div class="text">
+                            <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+                        </div>
+                    </div>
+
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+                <br>
+
+                <div style="text-align:center;">
+
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div class="Row" id="About">
+            <!-- LEFT COLUMN -->
+            <div class="Column_2">
+                <img src="./images/collab.png" alt="Teamwork makes the dream work">
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a 29 year-old software developer based out of Southern California with a unique skillset! When I'm not programming, you can find me watching/playing sports, assembling Spotify playlists or socializing with friends.
+                    <br>
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Python/Web Developer Boot Camp, and have been trained in the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, Ruby and more.
+                    <br>
+                    <br>I am a full-stack developer and look forward to working with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!-- GITHUB SECTION -->
+        <div class="Row" id="GitHub">
+            <!-- LEFT COLUMN -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>You can view my programming projects on my GitHub profile here:<br>
+                    <center><a href="https://github.com/timothydimasi" target="_blank">Tim's GitHub</a></center>
+                </p>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div class="Column_2">
+                <a href="https://github.com/timothydimasi" target="_blank"><img src="./images/GitHub_mark.png" alt="Link to GitHub"></a>
+            </div>
+        </div>
+
+        <!-- CONTACT SECTION -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form_popup" id="myForm">
+                <form action="https://formspree.io.info@learncodinganywhere.com" method="POST" class="form-container">
+                    <h1>Contact</h1>
+                    <label for="name"><b>Name</b></label>
+                    <input type="text" placeholder="Type your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                    <input type="text" placeholder="Enter your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Type your email address here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                    <input type="text" placeholder="Type your message here" name="message">
+                        
+                    <button type="submit" class="btn">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER SECTION -->
+        <footer>
+            <p>
+                <center>&copy; Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></center>
+                <br>
+            </p>
+        </footer>
+
+        <script src="js/portfolio.js"></script>
+
+    </body>
+</html>
