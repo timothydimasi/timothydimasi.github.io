@@ -320,6 +320,11 @@ footer {
     background-color: #3AAFA9;
 }
 
+.Column_1 p {   /* added this to have the text not get cut-off at the bottom */    
+    font-size: 1.2vw;
+    text-align: center;
+}
+
 .Column_2 {
     float: left;
     width: 50%;
